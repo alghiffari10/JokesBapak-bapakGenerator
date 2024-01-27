@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokes Bapak Bapak</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Jokes Bapak2 Generator</h1>
+      <img
+        class="joke"
+        id="joke"
+        src="https://jokesbapak2.reinaldyrafli.com/api/"
+        alt="Jokes Bapak-bapak" />
+      <button class="btn" id="btn" onclick="getRandomJoke()">Buat Jokes</button>
+    </div>
+    <script>
+      function getRandomJoke() {
+        var jokeImage = document.getElementById('joke');
+        // Append a timestamp as a query parameter to force image reload
+        jokeImage.src =
+          'https://jokesbapak2.reinaldyrafli.com/api/?timestamp=' + new Date().getTime();
+      }
+    </script>
+  </body>
+</html>
