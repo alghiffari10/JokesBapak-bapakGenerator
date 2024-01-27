@@ -30,9 +30,8 @@ body {
 }
 
 .joke {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 40px;
+  max-width: 100%;
+  height: auto;
 }
 
 .btn {
